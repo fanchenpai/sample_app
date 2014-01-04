@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  get "users/new", as: 'signup'
   root 'static_pages#home'
   get "static_pages/help", as: 'help'
   get "static_pages/about", as: 'about'
